@@ -4,8 +4,62 @@ body {
 
 .container {
     min-height: 100vH;
-    background-color: #007AFF !important;
+    background-color: #007aff !important;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    width: 36rem;
+    height: 27rem;
+    background-color: hsl(211, 65%, 90%);
+    border-radius: 1rem;
+}
+
+.cardImg {
+    width: 100%;
+    height: 8rem;
+    object-fit: scale-down;
+    background-color: hsl(211, 75%, 25%);
+    border-top-left-radius: inherit;
+}
+
+.cardPrimary {
+    height: 100%;
+    width: 10rem;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    background: hsl(211, 75%, 25%);
+}
+
+.cardSecondary {
+    width: 18rem;
+}
+
+.btnGroup {
+    width: inherit;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.1rem;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cardButton {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: start;
+    padding-left: 16%;
+
+}
+
+.cardButton:hover {
+    cursor: pointer;
+    border-left: 4px solid white;
+    background-color: hsl(211, 75%, 30%);
 }
